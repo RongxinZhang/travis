@@ -1,0 +1,10 @@
+mongo:
+  ports:
+    - "27017:27017"
+  image: mongo:3.0.7
+  command: --smallfiles
+
+redis:
+  image: retsly/redis
+  ports:
+    - "6379:6379"
